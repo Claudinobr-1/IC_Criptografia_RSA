@@ -37,7 +37,7 @@ def teste_lucas(b, n):
     if exp_binaria(b, n - 1, n) == 1:
         for i, j in fatores.items():
             if exp_binaria(b, (n - 1) // i, n) == 1:
-                print(f"{n} é composto")
+                print(f"{n} é inconclusivo")
                 return
             
         print(f"{n} é primo")
