@@ -41,8 +41,7 @@ def main():
         n = int(input("Insira o valor de n: "))
         primos = crivo_otimizado(n)
         print(f"Encontrados {len(primos)} números primos.")
-        if n < 100: # Evita poluir o terminal com listas gigantes
-            print(primos)
+        print(primos)
     except ValueError:
         print("Entrada inválida.")
 
